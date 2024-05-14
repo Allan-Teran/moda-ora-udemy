@@ -1,0 +1,141 @@
+:root {
+    --background-top-header: #162028;
+    --menu-text-color: #425564;
+    --text-color: #555;
+    --img-box-color: #003d52;
+    --footer-color: #0b171f;
+    --footer-text-color: #6f8597;
+
+    --font-body: "Roboto", tahoma, arial, sans-serif;
+    --font-title: 'Viaoda Libre', cursive;
+
+    --large-default-padding: 6.5em;
+    --medium-default-padding: 4em;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.principal {
+    width: 64em;
+    margin: 1.25em auto;
+}
+
+h1, h2 {
+    font-family: var(--font-title);
+    font-weight: normal;
+}
+
+.header {
+    background-color: var(--background-top-header);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipo {
+    margin: .5em 0 .5em 8.5em;
+    color: white;
+}
+
+.header__nav ul{
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 1.3em;
+    
+}
+
+.header__nav a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .15em;
+    transition: color .3s linear;
+}
+
+.header__nav a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.portifolio {
+    padding: 4em 6.5em;
+    text-align: center;
+}
+
+.portifolio h1 {
+    font-size: 2.25em;
+    color: #252525;
+}
+
+.portifolio p {
+    margin-top: 2em;
+    font-size: 1em;
+    line-height: 2;
+    color: var(--text-color);
+}
+
+.gallery {
+    color: var(--text-color);
+    padding: 0 6.5em 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__card {
+    text-align: center;
+    padding: 1em;
+    transition: background-color .3s linear;
+}
+
+.gallery__card:hover {
+    background-color: var(--img-box-color);
+    border-radius: 20px;
+}
+
+.gallery__title {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+.about {
+    background-color: var(--img-box-color);
+    padding: 6.5em;
+    color: white;
+    background-image: url(../images/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.about h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: normal;
+    
+}
+
+.about p {
+    margin-top: 2em;
+    line-height: 1.5;
+    width: 70%;
+}
+
+.footer {
+    background-color: var(--footer-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    letter-spacing: .3em;
+    font-size: .75em;
+    padding: 1.8em;
+}
